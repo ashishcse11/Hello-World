@@ -1,0 +1,10 @@
+<input type="button" value="Click Me" id="btn" onclick="getEventDetails(event)">
+<br></br>
+<div id="result"></div>
+<script>
+    function getEventDetails(event){
+var Eventdetails = event.type + ""+ event.clientX +""+event.clientY
+      +""+ event.target.type +""+ event.target.tagName;
+      document.getElementById("result").innerHTML = Eventdetails;
+    }
+</script>

@@ -1,0 +1,15 @@
+<script>
+    function Employee(name){
+        this.name = name
+    };
+    
+Employee.prototype.getName = function(){
+       return this.name
+};
+
+    var e1 = new Employee("A");
+    var e2 = new Employee("B");
+
+    document.write(e1.getName());
+    document.write(e2.getName());
+</script>
