@@ -1,0 +1,14 @@
+<script>
+var emp = function()
+{
+    this.name = "Ashish"
+}
+var Employee = new emp();
+var newEmployee = new emp();
+document.write("Before Changes" + Employee.name + "</br>")
+document.write("newEmployee" + newEmployee.name + "</br>")
+
+newEmployee.name = "XYZ";
+document.write("After Changes" + Employee.name + "</br>")
+document.write("Before Changes" + newEmployee.name + "</br>")
+</script>
